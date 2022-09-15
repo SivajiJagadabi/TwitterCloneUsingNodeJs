@@ -1,0 +1,48 @@
+POST http://localhost:3000/login/ 
+Content-Type:application/json
+
+{
+  "username":"JoeBiden",
+  "password":"biden@123"
+}
+
+###
+GET http://localhost:3000/user/followers/ 
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjYzMTM1NTExfQ.sn-aPyipaSWXOgLreAepMygDAnTBfjaI1IbpSRJuWug
+
+###
+GET http://localhost:3000/user/following/
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjYzMTM1NTExfQ.sn-aPyipaSWXOgLreAepMygDAnTBfjaI1IbpSRJuWug
+
+###
+GET http://localhost:3000/tweets/2/
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjYzMTM1NTExfQ.sn-aPyipaSWXOgLreAepMygDAnTBfjaI1IbpSRJuWug
+
+###
+
+GET http://localhost:3000/user/tweets/ 
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjYzMTM1NTExfQ.sn-aPyipaSWXOgLreAepMygDAnTBfjaI1IbpSRJuWug
+
+###
+POST http://localhost:3000/user/tweets/  
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjYzMTM1NTExfQ.sn-aPyipaSWXOgLreAepMygDAnTBfjaI1IbpSRJuWug
+
+
+Content-Type:application/json 
+
+{
+   "tweet": "The Mornings..."
+}
+
+###
+DELETE http://localhost:3000/tweets/12/
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjYzMTM1NTExfQ.sn-aPyipaSWXOgLreAepMygDAnTBfjaI1IbpSRJuWug
+
+###
+GET http://localhost:3000/tweets/2/likes/
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjYzMTM1NTExfQ.sn-aPyipaSWXOgLreAepMygDAnTBfjaI1IbpSRJuWug
+
+###
+GET http://localhost:3000/tweets/2/replies/ 
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjYzMTM1NTExfQ.sn-aPyipaSWXOgLreAepMygDAnTBfjaI1IbpSRJuWug
+
