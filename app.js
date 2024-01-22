@@ -2,11 +2,14 @@ const express = require("express");
 const path = require("path");
 const { open } = require("sqlite");
 const sqlite3 = require("sqlite3");
+const cors = require("cors");
 const app = express();
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 const dbPath = path.join(__dirname, "twitterClone.db");
 let db = null;
+
+app.use(cors());
 app.use(express.json());
 
 const initializeDbAndServer = async () => {
